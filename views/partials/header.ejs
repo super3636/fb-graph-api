@@ -1,0 +1,23 @@
+<div class="header">
+    <div class="logo">
+        <a href="/"><img class="logo-image" src="/storage/app/logo.png"></img></a>
+    </div>
+    <div class="nav">
+   
+        <% if (!user) { %>
+            <a href="/login/facebook">LOG IN</a>
+            <% } else { %>
+                <a class="nav-item" href="/">HOME</a>
+                <a class="nav-item" href="/about">ABOUT</a>
+                <a class="nav-item" href="/service">SERVICE</a>
+                <a class="nav-item"href="/pages">PAGE</a>
+               <a class="nav-item"href="/profile">PROFILE</a>
+               <img class="user-img" src=<%= user.image_url %> >
+            <a class="nav-item" href="/logout">LOG OUT</a>
+            <!-- <form action="/logoutFromFacebook" method="POST">
+                <input type="hidden" name="accessToken" value="<%= user.accessToken %>" />
+                <button type="submit">LOG OUT</button>
+            </form> -->
+            <% } %>
+    </div>
+</div>

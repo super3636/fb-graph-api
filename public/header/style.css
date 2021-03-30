@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+}
+.nav {
+  width: fit-content;
+  display: flex;
+}
